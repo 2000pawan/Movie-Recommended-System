@@ -4,6 +4,10 @@ import pandas as pd
 import requests
 from PIL import Image
 
+image = Image.open('img.jpg')
+image =  image.resize((1600, 1080))
+st.image(image, caption='Movie Recommended System')  
+
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
     data = requests.get(url)
@@ -31,10 +35,6 @@ movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('similarity.pkl','rb'))
 
 st.title('Movie Recommender System')
-
-image = Image.open('img.jpg')
-image =  image.resize((600, 400))
-st.image(image, caption='Movie Recommended System')  
 
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
