@@ -60,4 +60,4 @@ if st.button('Show Recommendation'):
     with col5:
         st.text(recommended_movie_names[4])
         st.image(recommended_movie_posters[4])
-st.markdown("<h1 style='text-align: bottom; bg='grey'; fg='white';>Developed by:- PAWAN YADAV. \n all rights reserved © 2023 PAWAN YADUVANSHI.</h4>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: bottom;>Developed by:- PAWAN YADAV. \n all rights reserved © 2023 PAWAN YADUVANSHI.</h6>", unsafe_allow_html=True)
