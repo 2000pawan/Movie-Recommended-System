@@ -4,8 +4,6 @@ import pandas as pd
 import requests
 from PIL import Image
 
-st.geometry('1900x1080') 
-
 image = Image.open('img.jpg')
 st.image(image, caption='Movie Recommended System') 
  
@@ -61,4 +59,5 @@ if st.button('Show Recommendation'):
     with col5:
         st.text(recommended_movie_names[4])
         st.image(recommended_movie_posters[4])
+                
 st.markdown("<h6 style='text-align:x=0.24; y=0.91; color: white;'>Developed by:- \n\n\nPAWAN YADAV. \n all rights reserved © 2023 PAWAN YADUVANSHI.</h6>", unsafe_allow_html=True)
