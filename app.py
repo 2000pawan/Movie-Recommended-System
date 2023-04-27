@@ -5,8 +5,7 @@ import requests
 from PIL import Image
 
 image = Image.open('img.jpg')
-image =  image.resize((1600, 1080))
-st.image(image, caption='Movie Recommended System')  
+st.image(image,  image.resize((1600, 1080)), caption='Movie Recommended System')  
 
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
