@@ -4,6 +4,7 @@ import pandas as pd
 import requests
 from PIL import Image
 
+st.geometry("900x800") 
 
 image = Image.open('img.jpg')
 st.image(image, caption='Movie Recommended System') 
