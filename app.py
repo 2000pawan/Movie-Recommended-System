@@ -5,8 +5,7 @@ import requests
 from PIL import Image
 
 image = Image.open('img.jpg')
-st.image(image, caption='Movie Recommended System') 
-( 
+st.image(image, caption='Movie Recommended System')  
 
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
@@ -59,5 +58,5 @@ if st.button('Show Recommendation'):
     with col5:
         st.text(recommended_movie_names[4])
         st.image(recommended_movie_posters[4])
-)
-st.markdown("<h6 style='text-align:x=0.24; y=0.91; color: white;'>Developed by:- \n\n\nPAWAN YADAV. \n all rights reserved © 2023 PAWAN YADUVANSHI.</h6>", unsafe_allow_html=True)                
+
+st.markdown("<h6 position: absolute; top: 0; right: 0; width: 100px; text-align:right; color: white;'>Developed by:- \n\n\nPAWAN YADAV. \n all rights reserved © 2023 PAWAN YADUVANSHI.</h6>", unsafe_allow_html=True)                
