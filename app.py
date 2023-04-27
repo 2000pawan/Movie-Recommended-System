@@ -2,7 +2,14 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-from PIL import Image
+from tkinter import *
+from PIL import ImageTk,Image
+from tkinter import messagebox
+import tkinter.messagebox as tkMessageBox
+import tkinter.ttk as ttk
+
+root = Tk() 
+root.resizable(False, False)
 
 image = Image.open('img.jpg')
 st.image(image, caption='Movie Recommended System') 
