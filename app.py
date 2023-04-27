@@ -4,8 +4,11 @@ import pandas as pd
 import requests
 from PIL import Image
 
-image = Image.open('img.jpg')
-st.image(image, caption='Movie Recommended System') 
+img = st.file_uploader('', type='jpg', key=6)
+if imag is not None:
+    new_image = image.resize((600, 400))
+    image = Image.open('img.jpg')
+    st.image(image, caption='Movie Recommended System') 
  
 
 def fetch_poster(movie_id):
