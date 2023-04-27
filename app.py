@@ -37,12 +37,6 @@ similarity = pickle.load(open('similarity.pkl','rb'))
 
 st.title('Movie Recommender System')
 
-st.set_page_config(
-    page_title="Ex-stream-ly Cool App",
-    page_icon="🧊",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
 
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
