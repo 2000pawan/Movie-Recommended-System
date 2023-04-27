@@ -42,6 +42,7 @@ st.set_page_config(
     page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
+)
 
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
