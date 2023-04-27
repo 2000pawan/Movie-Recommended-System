@@ -4,8 +4,8 @@ import pandas as pd
 import requests
 from PIL import Image
 
-img = st.file_uploader('', type='jpg', key=6)
-if imag is not None:
+bottom_image = st.file_uploader('', type='jpg', key=6)
+if bottom_image is not None:
     new_image = image.resize((600, 400))
     image = Image.open('img.jpg')
     st.image(image, caption='Movie Recommended System') 
