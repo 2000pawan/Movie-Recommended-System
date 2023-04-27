@@ -37,9 +37,6 @@ similarity = pickle.load(open('similarity.pkl','rb'))
 
 st.title('Movie Recommender System')
 
-st.title("Developed by:- PAWAN YADAV. \n all rights reserved © 2023 PAWAN YADUVANSHI.", relx=0.24,rely=0.91,relwidth=0.75,relheight=0.08)
-
-
 selected_movie = st.selectbox(
     "Type or select a movie from the dropdown",
     movies['title'].values) 
@@ -63,3 +60,5 @@ if st.button('Show Recommendation'):
     with col5:
         st.text(recommended_movie_names[4])
         st.image(recommended_movie_posters[4])
+st.text("Developed by:- PAWAN YADAV. \n all rights reserved © 2023 PAWAN YADUVANSHI.")
+st.markdown("<h1 style='text-align: center; color: red;'>Some title</h1>", unsafe_allow_html=True)
